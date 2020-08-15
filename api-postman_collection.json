@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "213e7a02-aebf-4232-9db5-65dbad9d9ff9",
+		"name": "Laravel API Article",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Articles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/articles",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles"
+					]
+				},
+				"description": "Fetch All articles"
+			},
+			"response": []
+		},
+		{
+			"name": "Get single article",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/articles/50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles",
+						"50"
+					]
+				},
+				"description": "Fetch single article data"
+			},
+			"response": []
+		},
+		{
+			"name": "Add new Article",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "New article",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "Test artciles data",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles"
+					]
+				},
+				"description": "Add new Article"
+			},
+			"response": []
+		},
+		{
+			"name": "Update existing Article",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/articles/51?title=New updated Article&body=Updated data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles",
+						"51"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "New updated Article"
+						},
+						{
+							"key": "body",
+							"value": "Updated data"
+						}
+					]
+				},
+				"description": "Update Article"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Article",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/articles/52",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles",
+						"52"
+					]
+				},
+				"description": "Delete Article by id"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
