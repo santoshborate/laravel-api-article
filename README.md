@@ -58,7 +58,8 @@ Rest API Article Application implemented in Laravel 7.21
    `php artisan db:seed`
 
 6. Run command : 
-   
+   `php artisan key:generate`
+   `npm install && npm run dev`   
    `php artisan serve`
    
    Application will listen on http://127.0.0.1:8000   
